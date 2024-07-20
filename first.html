@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Hostel Healthcare</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>University Hostel Healthcare</h1>
+        <nav>
+            <ul>
+                <li><a href="#ambulance-tracking">Ambulance Tracking</a></li>
+                <li><a href="#patient-info">Patient Info</a></li>
+                <li><a href="#isolation-alerts">Isolation Alerts</a></li>
+                <li><a href="#pharmacy-delivery">Pharmacy Delivery</a></li>
+                <li><a href="#accessibility">Accessibility</a></li>
+                <li><a href="#real-time-monitoring">Real-time Monitoring</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="ambulance-tracking">
+            <h2>Ambulance Tracking</h2>
+            <div id="ambulance-map"></div>
+        </section>
+        <section id="patient-info">
+            <h2>Patient Info Sharing</h2>
+            <form id="patient-form">
+                <label for="patient-id">Patient ID:</label>
+                <input type="text" id="patient-id" name="patient-id" required>
+                <button type="button" onclick="fetchPatientInfo()">Fetch Info</button>
+            </form>
+            <div id="patient-info-display"></div>
+        </section>
+        <section id="isolation-alerts">
+            <h2>Isolation Alerts</h2>
+            <div id="alerts"></div>
+        </section>
+        <section id="pharmacy-delivery">
+            <h2>Pharmacy Delivery</h2>
+            <form id="pharmacy-form">
+                <label for="medication">Medication:</label>
+                <input type="text" id="medication" name="medication" required>
+                <button type="button" onclick="orderMedication()">Order</button>
+            </form>
+            <div id="delivery-status"></div>
+        </section>
+        <section id="accessibility">
+            <h2>Accessibility</h2>
+            <button onclick="toggleHighContrast()">Toggle High Contrast</button>
+        </section>
+        <section id="real-time-monitoring">
+            <h2>Real-time Monitoring</h2>
+            <div id="monitoring-data"></div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
